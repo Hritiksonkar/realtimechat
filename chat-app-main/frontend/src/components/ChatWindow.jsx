@@ -100,8 +100,9 @@ const ChatWindow = () => {
           {activeTab === "contacts" && (
             <>
               <div
-                className={`${mobileView === "list" ? "flex" : "hidden"
-                  } md:flex w-full md:w-80 border-r flex-col`}
+                className={`${
+                  mobileView === "list" ? "flex" : "hidden"
+                } md:flex w-full md:w-80 border-r flex-col`}
               >
                 <div className="h-16 flex items-center px-4 border-b bg-gray-50 flex-shrink-0 font-bold text-xl text-gray-800">
                   Contacts
@@ -199,8 +200,9 @@ function ChatView({ mobileView, setMobileView }) {
   return (
     <>
       <div
-        className={`${mobileView === "list" ? "flex " : "hidden"
-          } md:flex w-full md:w-80 lg:w-96 flex-col border-r bg-white`}
+        className={`${
+          mobileView === "list" ? "flex " : "hidden"
+        } md:flex w-full md:w-80 lg:w-96 flex-col border-r bg-white`}
         style={{ height: "100%" }}
       >
         <div className="h-16 flex items-center px-4 border-b bg-gray-50 flex-shrink-0 font-bold text-xl">
@@ -215,8 +217,9 @@ function ChatView({ mobileView, setMobileView }) {
       </div>
 
       <div
-        className={`${mobileView === "detail" ? "flex" : "hidden"
-          }. md:flex flex-1 flex-col bg-white`}
+        className={`${
+          mobileView === "detail" ? "flex" : "hidden"
+        }. md:flex flex-1 flex-col bg-white`}
         style={{
           height: "100%",
           position: mobileView === "detail" ? "absolute" : "relative",
@@ -259,8 +262,9 @@ function TabButtom({ active, onClick, icon, label }) {
   return (
     <button
       onClick={onClick}
-      className={`flex flex-col items-center justify-center p-2 w-full transition-all ${active ? "text-indigo-400" : "text-gray-500"
-        }`}
+      className={`flex flex-col items-center justify-center p-2 w-full transition-all ${
+        active ? "text-indigo-400" : "text-gray-500"
+      }`}
     >
       <span className="text-xl flex items-center justify-center">{icon}</span>
       <span className="text-[10px]  uppercase font-bold mt-1">{label}</span>

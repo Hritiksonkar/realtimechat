@@ -48,47 +48,47 @@ const Login = () => {
           </h1>
         </div>
         {error && (
-          <div className="mb-4 p-3 bg-red-50 border border-red-200 text-red-600 rounded-lg text-sm">
-            {error}
-          </div>
+            <div className="mb-4 p-3 bg-red-50 border border-red-200 text-red-600 rounded-lg text-sm">
+                {error}
+                </div>
         )}
 
         <form onSubmit={handeLogin} className="space-y-5">
-          <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-1">
-              UserId (Unique Id)
-            </label>
-            <input
-              type="text"
-              value={userID}
-              onChange={(e) => setUserID(e.target.value)}
-              placeholder="e.g dheeraj_123"
-              className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none  transition-all"
-              required
-            />
-          </div>
+            <div>
+               <label className="block text-sm font-semibold text-gray-700 mb-1">
+                UserId (Unique Id)
+               </label>
+               <input
+                type="text"
+                value={userID}
+                onChange={(e) => setUserID(e.target.value)}
+                placeholder="e.g dheeraj_123"
+                className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none  transition-all"
+                required
+               />
+            </div>
 
-          <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-1">
-              Your Name (Optional)
-            </label>
-            <input
-              type="text"
-              value={nickName}
-              onChange={(e) => setNickName(e.target.value)}
-              placeholder="e.g Dheeraj"
-              className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none  transition-all"
-            />
-          </div>
+                        <div>
+               <label className="block text-sm font-semibold text-gray-700 mb-1">
+                Your Name (Optional)
+               </label>
+               <input
+                type="text"
+                value={nickName}
+                onChange={(e) => setNickName(e.target.value)}
+                placeholder="e.g Dheeraj"
+                className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 outline-none  transition-all"
+               />
+            </div>
 
 
-          <button
-            type="submit"
-            disabled={loading}
-            className="w-full bg-indigo-600 text-white py-3 rounded-xl font-bold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-200 disabled:bg-indigo-300"
-          >
-            {loading ? 'Processing...' : 'Start Chatting'}
-          </button>
+            <button
+             type="submit"
+             disabled={loading}
+             className="w-full bg-indigo-600 text-white py-3 rounded-xl font-bold hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-200 disabled:bg-indigo-300"
+            >
+                {loading ? 'Processing...': 'Start Chatting'}
+            </button>
         </form>
       </div>
     </div>
